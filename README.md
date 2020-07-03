@@ -1,2 +1,2 @@
 # Sistema De Login Javascript
- sistema de login feito em javascript
+ sistema de login feito totalmente em javascript

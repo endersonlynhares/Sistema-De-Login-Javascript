@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="sb-admin.min.css">
+    <style>
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+        button a:hover{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <title>Tela de Cadastro</title>
+</head>
+<body class="bg-primary">
+
+    <div class="container">
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header">
+                Cadastro
+            </div>
+            <div class="card-body">
+
+                <div class="form-group">
+                    <label for="txtN">Nome:</label>
+                    <input id="txtN" value="" type="email" placeholder="Digite seu nome" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtB">Sobrenome:</label>
+                    <input id="txtB" value="" type="email" placeholder="Digite seu sobrenome" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtE">E-mail:</label>
+                    <input id="txtE" value="" type="email" placeholder="Digite seu e-mail" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtS">Senha: </label>
+                    <input id="txtS" value="" type="password" placeholder="Digite sua senha" class="form-control">
+                </div>
+
+                <button onclick="cadastrarConta()" class="btn btn-block btn-outline-primary">Cadastrar-se</button>
+
+                <div class="mt-3 text-center">
+                    <a href="login.html" class="small">Já é cadastrado?  Clique aqui!</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+         
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cadastrado com Sucesso</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  Todas as informações estão guardadas!
+                </div>
+                <div class="modal-footer">
+                  <button  class="btn btn-primary">
+                      <a href="login.html">Ir para a tela de login</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
